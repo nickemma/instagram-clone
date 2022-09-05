@@ -10,20 +10,20 @@ const Navbar = () => {
         />
       </div>
       <input type="text" className="search" placeholder="Search" />
-      <span className="nav-links">
-        <button>
+      <ul className="nav-links">
+        <li>
           <i className="fas fa-home" />
-        </button>
-        <button>
+        </li>
+        <li>
           <i className="far fa-comment-alt" />
-        </button>
-        <button>
+        </li>
+        <li>
           <i className="far fa-compass" />
-        </button>
-        <button>
+        </li>
+        <li>
           <i className="far fa-heart" />
-        </button>
-      </span>
+        </li>
+      </ul>
     </nav>
   );
 };

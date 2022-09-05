@@ -26,35 +26,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 9%;
+  padding: 2rem 10%;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
   width: 100%;
-  border-bottom: 0.1em solid #dbdbdb;
+  border-bottom: 0.1rem solid #dbdbdb;
 }
-
-button {
-  cursor: pointer;
-  padding: unset;
-  border: unset;
-  background: unset;
-  transition: all 0.2s ease-in-out;
-  border-radius: 5px;
-}
-
-/* .logo > img {
-  vertical-align: middle;
-} */
 
 .search {
   background: #fafafa;
-  height: 2em;
-  margin: 0.8em;
-  width: 15.5em;
-  border: 0.07em solid #dbdbdb;
-  border-radius: 0.2em;
+  height: 3rem;
+  width: 30.5rem;
+  border: 0.07rem solid #dbdbdb;
+  border-radius: 0.2rem;
 }
 
 .search::placeholder {
@@ -63,48 +49,54 @@ button {
 }
 
 .nav-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+  padding: 0 5px;
 }
 
 .nav-links i {
-  transform: scale(1.6);
-  color: #252525;
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-links i:hover {
+  color: #0081d6;
+  transform: scale(1.2);
 }
 
 .container {
-  padding: 0 15%;
+  padding: 4rem 10%;
 }
 
 .bio {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 3em 0 2em 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 5rem;
   border-bottom: 0.2px solid #dbdbdb;
-  margin-top: 5em;
-  margin-bottom: 2em;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
-#profilePhotoInput {
-  display: none;
+.bio label {
+  flex: 1 1 35rem;
 }
 
 .profile-photo {
   background: #000;
-  width: 10em;
-  height: 10em;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 600px) {
-  .profile-photo {
-    width: 5em;
-    height: 5em;
-    margin-top: 3em;
-    margin-right: 2em;
-  }
+#profilePhotoInput {
+  display: none;
 }
 
 .profile-photo img {
@@ -119,23 +111,29 @@ button {
   opacity: 0.7;
 }
 
+.profile-info {
+  flex: 1 1 60rem;
+}
+
 .profile-info .name {
-  font-size: 1.7em;
+  font-size: 2rem;
   color: #545454;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .profile-info .about {
-  font-size: 1.2em;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: #545454;
 }
 
 .profile-info button {
   background-color: #0095f6;
   color: #fff;
-  font-size: 1.1em;
-  width: 6em;
-  height: 2em;
+  font-size: 2rem;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
 }
 
 .profile-info button:hover {
@@ -144,15 +142,16 @@ button {
 
 .edit-bio-form input {
   width: 50%;
-  height: 2em;
-  border: 0.1em solid #dbdbdb;
-  border-radius: 0.2em;
-  padding: 0.5em;
-  margin-top: 0.5em;
+  height: 2rem;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .edit-bio-form button {
-  margin: 1em 1em 0 0;
+  margin: 1rem 1rem 0 0;
 }
 
 .edit-bio-form .cancel-button {
@@ -166,22 +165,22 @@ button {
 .add-photo-button {
   transform: scale(3);
   position: fixed;
-  bottom: 5em;
-  right: 7em;
+  bottom: 5rem;
+  right: 7rem;
   cursor: pointer;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 1.7em;
-  column-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
 }
 
 .item {
-  height: 17.5em;
-  width: 17.5em;
+  height: 26.5rem;
+  width: 26.5rem;
   background: #000;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -198,9 +197,9 @@ button {
 .delete-button {
   opacity: 0;
   position: absolute;
-  margin-left: -12em;
-  margin-top: 11em;
-  padding: 0.1em 0.3em;
+  margin-left: -12rem;
+  margin-top: 11rem;
+  padding: 0.1rem 0.3rem;
   background-color: #890000;
   color: #fff;
   border: 1px solid #c8c8c8;
