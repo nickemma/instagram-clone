@@ -5,9 +5,9 @@ import { db } from '../dexie';
 
 const Bio = () => {
   const [userDetails, setUserDetails] = useState({
-    name: 'Ebenezer Don',
+    name: 'Nicholas Emmanuel',
     about:
-      'Building Newdev.io - Learn to code and connect with the best minds.',
+      'Techie Emma. Building LazyCoders.io - Learn to code and connect with the best minds.',
   });
   const [editFormIsOpen, setEditFormIsOpen] = useState(false);
   const [profilePhoto, setProfilePhoto] = useState(profileIcon);

@@ -1,6 +1,6 @@
 # Project Name
 
-Microverse LazyCoders
+Instagram Clone
 
 # Description the project.
 
@@ -11,7 +11,8 @@ The pull request is opened to get a review on the project and check for any requ
 ## Built With
 
 - React js
-- Animation
+- Dexie
+- Localstorage
 - CSS
 
 ## Getting Started
@@ -24,7 +25,7 @@ The pull request is opened to get a review on the project and check for any requ
 
 ## Click here for live version
 
-### live demo: [Live](https://lazy-coders.netlify.app/)
+### live demo: [Live]()
 
 To get a local copy up and running follow these simple example steps.
 follow>>>>>>>>>
@@ -33,7 +34,7 @@ follow>>>>>>>>>
 
 to use the project To do list please follow :
 
-> Open GitHub and go to my GitHub repository name: math-magician.to clone.
+> Open GitHub and go to my GitHub repository name: instagram-clone.to clone.
 > Click “Code” and copy the given URL.
 > click code and copy the URL.
 
@@ -49,7 +50,7 @@ $ git clone {repository URL}
 
 ### Usage
 
-> open your directory math-magician/
+> open your directory instagram-clone/
 
 \_use vs-code or any IDE to view line code .
 
