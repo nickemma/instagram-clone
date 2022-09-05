@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 0.1rem solid #dbdbdb;
+}
+
+.search {
+  background: #fafafa;
+  height: 3rem;
+  width: 30.5rem;
+  border: 0.07rem solid #dbdbdb;
+  border-radius: 0.2rem;
+}
+
+.search::placeholder {
+  text-align: center;
+  color: #808080;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+  padding: 0 5px;
+}
+
+.nav-links i {
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-links i:hover {
+  color: #0081d6;
+  transform: scale(1.1);
+}
+
+.container {
+  padding: 4rem 10%;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 2rem 5rem;
+  border-bottom: 0.2px solid #dbdbdb;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.bio label {
+  flex: 1 1 35rem;
+}
+
+.profile-photo {
+  background: #000;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+#profilePhotoInput {
+  display: none;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-photo img:hover {
+  opacity: 0.7;
+}
+
+.profile-info {
+  flex: 1 1 60rem;
+}
+
+.profile-info .name {
+  font-size: 2rem;
+  color: #545454;
+  margin-bottom: 1rem;
+}
+
+.profile-info .about {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #545454;
+}
+
+.profile-info button {
+  background-color: #0095f6;
+  color: #fff;
+  font-size: 2rem;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.profile-info button:hover {
+  background-color: #0081d6;
+}
+
+.edit-bio-form input {
+  width: 50%;
+  height: 2rem;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.edit-bio-form button {
+  margin: 1rem 1rem 0 0;
+}
+
+.edit-bio-form .cancel-button {
+  background-color: #890000;
+}
+
+#addPhotoInput {
+  display: none;
+}
+
+.add-photo-button {
+  transform: scale(3);
+  position: fixed;
+  bottom: 5rem;
+  right: 7rem;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.item {
+  height: 26.5rem;
+  width: 26.5rem;
+  background: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item:hover .item-image {
+  opacity: 0.7;
+}
+
+.delete-button {
+  opacity: 0;
+  position: absolute;
+  margin-left: -15rem;
+  margin-top: 11rem;
+  padding: 0.1rem 0.3rem;
+  background-color: #890000;
+  color: #fff;
+  border: 1px solid #c8c8c8;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #551010;
+  color: #fff;
+}
+
+.item:hover .delete-button {
+  opacity: 1;
+}
+
+.footer {
+  margin-top: 2rem;
+  width: 100%;
+  border-top: 0.1rem solid #dbdbdb;
+}
+
+.credit {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+span {
+  color: #0081d6;
+  font-style: italic;
+  font-weight: 700;
+}
+/* ========= Media Queries =========== */
+
+@media (max-width: 760px) {
+  html {
+    font-size: 55%;
+  }
+
+  .search {
+    display: none;
+    background: red;
+  }
+
+  .bio {
+    padding: 2rem 0;
+  }
+
+  .profile-info {
+    flex: 1 1 40rem;
+  }
+
+  .item {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 50%;
+  }
+}
