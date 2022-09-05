@@ -1,6 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
 body {
   background-color: #fafafa;
-  margin: 0;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 0.1em solid #dbdbdb;
 }
 
 button {
@@ -12,25 +44,9 @@ button {
   border-radius: 5px;
 }
 
-nav {
-  position: fixed;
-  display: grid;
-  top: 0;
-  background-color: #fff;
-  height: 3.3em;
-  line-height: 3.3em;
-  width: 100%;
-  border-bottom: 0.1em solid #dbdbdb;
-  grid-template-columns: 2fr 1fr 1fr 0.5fr;
-}
-
-.logo {
-  text-decoration: none;
-}
-
-.logo > img {
+/* .logo > img {
   vertical-align: middle;
-}
+} */
 
 .search {
   background: #fafafa;

@@ -1,12 +1,14 @@
+import React from 'react';
+
 const Navbar = () => {
   return (
     <nav>
-      <button className="logo">
+      <div className="logo">
         <img
           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
           alt="logo"
         />
-      </button>
+      </div>
       <input type="text" className="search" placeholder="Search" />
       <span className="nav-links">
         <button>
