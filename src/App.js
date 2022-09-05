@@ -1,11 +1,16 @@
+import { Bio, Gallery, Navbar } from './components';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>hello world</h1>
-    </div>
+    <>
+      <Navbar />
+      <div className="container">
+        <Bio />
+        <Gallery />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
